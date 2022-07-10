@@ -32,7 +32,7 @@ BlogUtilAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		var sys_id = this.getParameter("sysparm_id");
 		var column = this.getParameter("sysparm_column");
 		var operation = this.getParameter("sysparm_operation");
-		
+		//if(gs.hasRole('sn_blog_management.author')) {
 		if(operation == "read"){
 			var gr = new GlideRecord(table);
 			gr.get(sys_id);
@@ -52,7 +52,8 @@ BlogUtilAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			gr3.setValue(col2,vl2);
 			gr3.insert();
 			
-		}
+		} 
+	//}
 		
     },
 	
