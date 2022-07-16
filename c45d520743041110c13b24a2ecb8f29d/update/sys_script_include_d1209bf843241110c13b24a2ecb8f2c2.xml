@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>public</access>
+        <access>package_private</access>
         <active>true</active>
         <api_name>sn_blog_management.BlogUtilAjax</api_name>
         <caller_access/>
@@ -15,12 +15,13 @@ BlogUtilAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		var current = this.getParameter("sysparm_current") || "-1";
 		
 		
-		var blog = new GlideRecordSecure("sn_blog_management_blog_post");
+		var blog = new GlideRecord("sn_blog_management_blog_post");
 		blog.addQuery("title",title);
 		blog.addQuery("sys_id","!=",current);
-		
-		if("" != author && gs.hasRole('sn_blog_management.author'))
-			blog.addQuery("author",gs.getUserID());
+		if (blog.canRead())
+		//if (gs.hasRole('sn_blog_management.author'))
+		//if("" != author)  //&& gs.hasRole('sn_blog_management.author'))
+			//blog.addQuery("author",gs.getUserID());
 		blog.query();
 		if(blog.next())
 			return blog.getValue("sys_id");
@@ -63,12 +64,16 @@ BlogUtilAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		return user_gr.getValue("manager");
 	},
 	
-	getIncidentShortDesc: function(incident,sys_id){
+	getIncidentShortDesc: function(incident, sys_id){
 		var incident_gr = new GlideRecord("incident");
 		incident_gr.get(sys_id);
 		return incident_gr.getValue("short_description");
 	},
-	
+	getToken: function(id){
+		var token = new GlideRecord("sn_blog_management_blog_post");
+		token.get(id);
+		return token.getValue("title");
+	},
 	isPublic: function(){
 		return true;
 	},

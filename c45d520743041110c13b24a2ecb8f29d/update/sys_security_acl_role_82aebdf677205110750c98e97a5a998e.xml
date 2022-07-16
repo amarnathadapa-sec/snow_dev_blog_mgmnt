@@ -2,14 +2,14 @@
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-07-10 13:54:01</sys_created_on>
-        <sys_id>1ac0ada677681110750c98e97a5a9930</sys_id>
+        <sys_created_on>2022-07-11 10:43:08</sys_created_on>
+        <sys_id>82aebdf677205110750c98e97a5a998e</sys_id>
         <sys_name>sn_blog_management_blog_post.sn_blog_management.author</sys_name>
         <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
         <sys_security_acl display_value="sn_blog_management_blog_post">474affd3430c1110c13b24a2ecb8f24a</sys_security_acl>
-        <sys_update_name>sys_security_acl_role_1ac0ada677681110750c98e97a5a9930</sys_update_name>
+        <sys_update_name>sys_security_acl_role_82aebdf677205110750c98e97a5a998e</sys_update_name>
         <sys_user_role display_value="sn_blog_management.author" name="sn_blog_management.author">2730856b438c1110c13b24a2ecb8f2d3</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
