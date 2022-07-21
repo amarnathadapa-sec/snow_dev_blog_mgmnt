@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description> 10 recent_published_posts</description>
+        <direct>false</direct>
+        <endpoint>sn_blog_management_recent_published_posts.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j2="jelly:core" xmlns:g2="glide" xmlns:j="null" xmlns:g="null">
+	<style>
+	table, td {
+		padding: 3px;
+	}
+	</style>
+	
+	<h3> Recent 10 Blog posts </h3>
+	
+	<g2:evaluate var="jvar_gr" object="true">
+		var gr = new GlideRecord('sn_blog_management_blog_post');
+		gr.query();
+		gr.setLimit(10);
+		gr;
+	</g2:evaluate>
+	<table border="1" cellspacing="2">
+		<j2:if test="${jvar_gr.hasNext()}">
+			<tr>
+				<td>Title</td>
+				<td>Owner</td>
+			</tr>
+			<g2:no_escape>
+				<j2:while test="${jvar_gr.next()}">
+		<tr>
+		 <td><a href="/sn_blog_management_blog_post.do?sys_id=${jvar_gr.getValue('sys_id')}" target="_blank">${jvar_gr.getValue('title')}</a></td>     
+			<td>${jvar_gr.getValue('author')}</td>
+		</tr>
+				</j2:while>
+			</g2:no_escape>
+		</j2:if>
+	</table>
+</j:jelly>]]></html>
+        <name>recent_published_posts</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-20 16:12:07</sys_created_on>
+        <sys_id>891c11317730d510750c98e97a5a9982</sys_id>
+        <sys_name>recent_published_posts</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_ui_page_891c11317730d510750c98e97a5a9982</sys_update_name>
+    </sys_ui_page>
+</record_update>

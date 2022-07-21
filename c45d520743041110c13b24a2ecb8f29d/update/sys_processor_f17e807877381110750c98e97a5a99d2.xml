@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_processor">
+    <sys_processor action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <description/>
+        <interactive>false</interactive>
+        <name>test_processor</name>
+        <parameters/>
+        <params_endpoint/>
+        <path>test_processor</path>
+        <path_endpoint>sn_blog_management_test_processor</path_endpoint>
+        <require_csrf>false</require_csrf>
+        <roles>snc_internal</roles>
+        <script><![CDATA[(function process(g_request, g_response, g_processor) {
+
+	    var operation = g_request.getParameter("operation");
+        var sys_id = g_request.getParameter("blog_post_sys_id");
+        var column = g_request.getParameter("column");
+        var value = g_request.getParameter("value") || "";
+
+        g_response.setContentType('text/html;charset=UTF-8');
+
+    var blog = new GlideRecord("sn_blog_management_blog_post");
+        if (blog.get(sys_id)) {
+           if("read" == operation) {
+			  // g_processor.writeOutput("hai");
+              g_processor.writeOutput(blog.getValue(column));
+           } else if ("update" == operation) {
+               blog.setValue(column, value);
+               g_processor.writeOutput(column + "has updated to" + value);
+           }
+        } else 
+           g_processor.writeOutput("Not Found");
+
+})(g_request, g_response, g_processor);]]></script>
+        <sys_class_name>sys_processor</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-17 07:58:12</sys_created_on>
+        <sys_id>f17e807877381110750c98e97a5a99d2</sys_id>
+        <sys_name>test_processor</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_processor_f17e807877381110750c98e97a5a99d2</sys_update_name>
+        <type>script</type>
+        <xframe_sameorigin>false</xframe_sameorigin>
+    </sys_processor>
+</record_update>
