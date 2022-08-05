@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Blog posts - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="blog_posts">90244bf97709d110750c98e97a5a992a</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-02 09:46:36</sys_created_on>
+        <sys_id>78e4c33d7709d110750c98e97a5a993e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Blog posts - Container 1</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sp_container_78e4c33d7709d110750c98e97a5a993e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-02 09:46:36</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</application>
+        <file_path/>
+        <instance_id>2df2212d98201110958b7d497e337b68</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sp_container_78e4c33d7709d110750c98e97a5a993e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Blog posts - Container 1</name><order>1</order><sp_page display_value="blog_posts">90244bf97709d110750c98e97a5a992a</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-08-02 09:46:36</sys_created_on><sys_id>78e4c33d7709d110750c98e97a5a993e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Blog posts - Container 1</sys_name><sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package><sys_policy/><sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope><sys_update_name>sp_container_78e4c33d7709d110750c98e97a5a993e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-08-02 09:46:36</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>1708496593</payload_hash>
+        <record_name>Blog posts - Container 1</record_name>
+        <reverted_from/>
+        <source>38b8564e77201110750c98e97a5a99db</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-02 09:46:36</sys_created_on>
+        <sys_id>34e4c33d7709d110750c98e97a5a9941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1825df337530000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-02 09:46:36</sys_updated_on>
+        <type>Container</type>
+        <update_guid>7ce4c33d3809d1101bc820264c7d3d40</update_guid>
+        <update_guid_history>7ce4c33d3809d1101bc820264c7d3d40:1708496593</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Blog posts - Container 1">10f4cff97709d110750c98e97a5a99ec</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-02 09:46:50</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>5e3d56930e174780b097a2da87f7fe40</sys_id>
+        <sys_metadata>78e4c33d7709d110750c98e97a5a993e</sys_metadata>
+        <sys_name>Blog posts - Container 1</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_scope_delete display_value="">08fbee7fcad34dee82f3c0a762de72e4</sys_scope_delete>
+        <sys_update_name>sp_container_78e4c33d7709d110750c98e97a5a993e</sys_update_name>
+        <sys_update_version display_value="sp_container_78e4c33d7709d110750c98e97a5a993e">34e4c33d7709d110750c98e97a5a9941</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

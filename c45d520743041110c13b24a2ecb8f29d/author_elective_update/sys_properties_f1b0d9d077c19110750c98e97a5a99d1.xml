@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>sn_blog_management.token</name>
+        <read_roles/>
+        <suffix>token</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-28 09:29:59</sys_created_on>
+        <sys_id>f1b0d9d077c19110750c98e97a5a99d1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>sn_blog_management.token</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_properties_f1b0d9d077c19110750c98e97a5a99d1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-28 12:29:17</sys_updated_on>
+        <type>string</type>
+        <value>Securityworld</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=f1b0d9d077c19110750c98e97a5a99d1"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</application>
+        <file_path/>
+        <instance_id>2df2212d98201110958b7d497e337b68</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_properties_f1b0d9d077c19110750c98e97a5a99d1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>true</ignore_cache><is_private>false</is_private><name>sn_blog_management.token</name><read_roles/><suffix>token</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-28 09:29:59</sys_created_on><sys_id>f1b0d9d077c19110750c98e97a5a99d1</sys_id><sys_mod_count>1</sys_mod_count><sys_name>sn_blog_management.token</sys_name><sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package><sys_policy/><sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope><sys_update_name>sys_properties_f1b0d9d077c19110750c98e97a5a99d1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-07-28 12:29:17</sys_updated_on><type>string</type><value>Securityworld</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=f1b0d9d077c19110750c98e97a5a99d1"/></record_update>]]></payload>
+        <payload_hash>127968805</payload_hash>
+        <record_name>sn_blog_management.token</record_name>
+        <reverted_from/>
+        <source>38b8564e77201110750c98e97a5a99db</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-28 12:29:17</sys_created_on>
+        <sys_id>cf2af55077459110750c98e97a5a99bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18244c85b5b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-28 12:29:17</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>0b2af550544591108628141b457a78bb</update_guid>
+        <update_guid_history>0b2af550544591108628141b457a78bb:127968805,c52199d086c191105d0b71f9dab429b6:-1034458537</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-28 12:50:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>4619655ce39a432896d3042ceac74440</sys_id>
+        <sys_metadata>f1b0d9d077c19110750c98e97a5a99d1</sys_metadata>
+        <sys_name>sn_blog_management.token</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_scope_delete display_value="">08fbee7fcad34dee82f3c0a762de72e4</sys_scope_delete>
+        <sys_update_name>sys_properties_f1b0d9d077c19110750c98e97a5a99d1</sys_update_name>
+        <sys_update_version display_value="sys_properties_f1b0d9d077c19110750c98e97a5a99d1">cf2af55077459110750c98e97a5a99bb</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

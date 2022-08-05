@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>test1</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>sn_blog_management.test1</name>
+        <read_roles>admin</read_roles>
+        <suffix>test1</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-28 11:37:07</sys_created_on>
+        <sys_id>7a0ee5d477059110750c98e97a5a9926</sys_id>
+        <sys_name>sn_blog_management.test1</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_properties_7a0ee5d477059110750c98e97a5a9926</sys_update_name>
+        <type>password2</type>
+        <value>{{dflt-gpaes}}dCbtCW4/tmo91NGvOdQi3A==</value>
+        <write_roles>admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=7a0ee5d477059110750c98e97a5a9926"/>
+</record_update>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="INSERT_OR_UPDATE">
+        <class_name/>
+        <order>1</order>
+        <sp_column display_value="1">8a6c6fe8b3131300e64be12b86a8dc8f</sp_column>
+        <sp_container display_value="Blog posts - Container 1">7c66cf7d7709d110750c98e97a5a9942</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-02 10:03:34</sys_created_on>
+        <sys_id>15c843317749d110750c98e97a5a99f1</sys_id>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sp_row_15c843317749d110750c98e97a5a99f1</sys_update_name>
+    </sp_row>
+</record_update>

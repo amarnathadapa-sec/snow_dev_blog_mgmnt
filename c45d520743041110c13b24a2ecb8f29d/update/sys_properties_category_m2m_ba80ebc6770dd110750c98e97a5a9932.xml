@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="test2">fe70abc6770dd110750c98e97a5a9919</category>
+        <order>100</order>
+        <property display_value="sn_blog_management.test1" name="sn_blog_management.test1">7a0ee5d477059110750c98e97a5a9926</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-03 06:25:55</sys_created_on>
+        <sys_id>ba80ebc6770dd110750c98e97a5a9932</sys_id>
+        <sys_name>sn_blog_management.test1.test2</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_ba80ebc6770dd110750c98e97a5a9932</sys_update_name>
+    </sys_properties_category_m2m>
+</record_update>

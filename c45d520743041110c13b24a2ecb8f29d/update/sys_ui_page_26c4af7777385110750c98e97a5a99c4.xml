@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[// ]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>sn_blog_management_blog_author_role.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<g:ui_form>
+	Enter the E-mail ID <input name="mailid" />
+	<input type = "submit" />
+	</g:ui_form>
+</j:jelly>]]></html>
+        <name>blog_author_role</name>
+        <processing_script><![CDATA[var mail = mailid;
+var gr = new GlideRecord('sys_user');
+gr.initialize();
+gr.addQuery('email', mail);
+gr.query();
+if(gr.next()){
+	var usersysid = gr.sys_id;
+}
+	var gr1 = new GlideRecord('sys_user_role');
+	gr1.initialize();
+	gr1.addQuery('sys_name', "sn_blog_management.author");
+	gr1.query();
+if(gr1.next()){
+	var rolesysid = gr1.sys_id;
+}
+gs.addInfoMessage(rolesysid);
+	var gr2 = new GlideRecord('sys_user_has_role');
+	gr2.setValue('user', usersysid);
+	gr2.setValue('role', rolesysid);
+	gr2.update();
+
+]]></processing_script>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-27 07:00:35</sys_created_on>
+        <sys_id>26c4af7777385110750c98e97a5a99c4</sys_id>
+        <sys_name>blog_author_role</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_ui_page_26c4af7777385110750c98e97a5a99c4</sys_update_name>
+    </sys_ui_page>
+</record_update>

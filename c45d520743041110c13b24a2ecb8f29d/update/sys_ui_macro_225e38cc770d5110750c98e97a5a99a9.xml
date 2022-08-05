@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>create_prb</name>
+        <scoped_name>sn_blog_management_create_prb</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-27 13:32:59</sys_created_on>
+        <sys_id>225e38cc770d5110750c98e97a5a99a9</sys_id>
+        <sys_name>create_prb</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_ui_macro_225e38cc770d5110750c98e97a5a99a9</sys_update_name>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<g:evaluate>
+	var sd = "${sysparm_sd}" || "It is created unauthenticated via jelly runner";
+	var gr = new GlideRecord("problem");
+	gr.initialize();
+	gr.setValue("short_description", sd);
+	gr.insert();
+	</g:evaluate>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

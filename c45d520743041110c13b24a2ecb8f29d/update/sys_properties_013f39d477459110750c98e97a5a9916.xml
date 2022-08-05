@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>sn_blog_management.tokentest</name>
+        <read_roles/>
+        <suffix>tokentest</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-28 12:51:39</sys_created_on>
+        <sys_id>013f39d477459110750c98e97a5a9916</sys_id>
+        <sys_name>sn_blog_management.tokentest</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_properties_013f39d477459110750c98e97a5a9916</sys_update_name>
+        <type>password</type>
+        <value>{{dflt-gpaes}}FYzwR3Fnmv6NBtW5gQn6KA==</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=013f39d477459110750c98e97a5a9916"/>
+</record_update>

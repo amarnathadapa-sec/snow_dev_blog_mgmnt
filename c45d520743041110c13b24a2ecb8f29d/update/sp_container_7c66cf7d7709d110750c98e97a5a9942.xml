@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Blog posts - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="blog_posts">90244bf97709d110750c98e97a5a992a</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-02 09:53:09</sys_created_on>
+        <sys_id>7c66cf7d7709d110750c98e97a5a9942</sys_id>
+        <sys_name>Blog posts - Container 1</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sp_container_7c66cf7d7709d110750c98e97a5a9942</sys_update_name>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>

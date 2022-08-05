@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>GET</http_method>
+        <name>all</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    var gr = new GlideRecord('sn_blog_management_blog_post');
+	gr.query();
+	var data = [];
+	while (gr.next()) {
+		data.push({'title': gr.getValue('title'), 'author': gr.getValue('author'), 'state': gr.getValue('state')});
+					}
+response.setBody(data); 
+})(request, response);]]></operation_script>
+        <operation_uri>/api/sn_blog_management/blog_post_records/all</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/all</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>false</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-28 09:15:33</sys_created_on>
+        <sys_id>a0ba455c77819110750c98e97a5a995e</sys_id>
+        <sys_name>all</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_ws_operation_a0ba455c77819110750c98e97a5a995e</sys_update_name>
+        <web_service_definition display_value="blog post records">9d5acd1c77819110750c98e97a5a99db</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
